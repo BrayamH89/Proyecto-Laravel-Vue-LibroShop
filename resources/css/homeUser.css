@@ -1,0 +1,193 @@
+/* ===========================
+   ESTILOS PARA COMPRAS DE LIBROS
+=========================== */
+
+/* Layout general */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* Título */
+.titulo {
+  font-size: 1.8rem;
+  margin: 5px 0 15px 0;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Mensaje de éxito */
+.alert-success {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 95%;
+  max-width: 1200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Tarjeta */
+.target {
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+
+/* Tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.table th,
+.table td {
+  padding: 8px 6px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f9fc;
+  transition: background-color 0.3s ease;
+}
+
+/* Imagen del libro */
+.img-miniatura {
+  width: 60px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.img-miniatura:hover {
+  transform: scale(1.05);
+}
+
+/* Texto muted */
+.text-muted {
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Botón comprar */
+.btn_comprar {
+  width: 100%;
+  background-color: #28a745;
+  padding: 7px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin: 5px 0;
+  font-size: 0.85rem;
+}
+
+.btn_comprar:hover:not(:disabled) {
+  background-color: #218838;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.btn_comprar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.page-link {
+  color: #032840;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  padding: 0.5rem 0.75rem;
+  margin: 0 0.25rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.page-link:hover {
+  background-color: #15AEBF;
+  color: white;
+  border-color: #15AEBF;
+}
+
+.page-item.active .page-link {
+  background-color: #15AEBF;
+  border-color: #15AEBF;
+  color: white;
+}
+
+.page-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .target {
+    padding: 10px;
+    overflow-x: auto;
+  }
+
+  .table {
+    font-size: 0.8rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 6px 4px;
+  }
+
+  .img-miniatura {
+    width: 50px;
+    height: 70px;
+  }
+
+  .btn_comprar {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+}

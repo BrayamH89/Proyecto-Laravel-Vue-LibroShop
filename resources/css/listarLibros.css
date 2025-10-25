@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa; /* Fondo claro */
+}
+
+/* Contenedor principal */
+.max-w-6xl {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+/* Mensajes de éxito */
+.bg-green-100 {
+  background-color: #d4edda;
+}
+.text-green-700 {
+  color: #155724;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #e2e8f0;
+}
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+}
+.border-t {
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Imagen de portada */
+.img-miniatura {
+  width: 50px;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+/* Enlaces */
+.text-blue-600 {
+  color: #2563eb;
+}
+.text-blue-600:hover {
+  text-decoration: underline;
+}
+
+/* Paginación */
+.mt-4 {
+  margin-top: 1rem;
+}
+
+/* Botón editar */
+.btn_editar {
+  background-color: white;
+  display: block;
+  padding: 10px 15px;
+  margin: 4px 0;
+  color: #000000;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+.btn_editar:hover {
+  background: #15aebf;
+  color: white;
+}
